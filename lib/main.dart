@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData.dark(),
         debugShowCheckedModeBanner: false,
-        initialRoute: '/BookingSuccess',
+        initialRoute: '/',
         routes: {
            '/': (context) => const SplashScreen(),
            '/profile':(context) => OnboardingScreen(),
