@@ -3,7 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertest/bloc/movie/bloc/movie_bloc.dart';
 import 'package:fluttertest/bloc/onboarding/onboarding_cubit.dart';
 import 'package:fluttertest/data/service/api_service.dart';
+import 'package:fluttertest/presentation/screenbs/booking_success.dart';
 import 'package:fluttertest/presentation/screenbs/home_screen.dart';
+import 'package:fluttertest/presentation/screenbs/movie_details_screen.dart';
 import 'package:fluttertest/presentation/screenbs/onboarding_screen.dart';
 import 'package:fluttertest/presentation/screenbs/splash_screen.dart';
 
@@ -28,11 +30,13 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData.dark(),
         debugShowCheckedModeBanner: false,
-        initialRoute: '/',
+        initialRoute: '/BookingSuccess',
         routes: {
            '/': (context) => const SplashScreen(),
            '/profile':(context) => OnboardingScreen(),
-           '/home':(context) => HomeScreen()
+           '/home':(context) => HomeScreen(),
+           '/movieDetails':(context)=>MovieDetailsScreen(),
+           '/BookingSuccess':(context)=> BookingSuccess()
         },
       ),
     );
