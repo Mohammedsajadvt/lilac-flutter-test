@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       listeners: [
         BlocProvider(create: (_)=> OnboardingCubit()),
          BlocProvider(
-          create: (_) => MovieBloc(ApiService()),
+          create: (_) => MovieBloc(apiService: ApiService(),),
         ),
       ],
       child: MaterialApp(
