@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
            '/': (context) => const SplashScreen(),
-           '/profile':(context) => OnboardingScreen(),
+           '/onboarding':(context) => OnboardingScreen(),
            '/home':(context) => HomeScreen(),
            '/movieDetails':(context)=>MovieDetailsScreen(),
            '/BookingSuccess':(context)=> BookingSuccess()
